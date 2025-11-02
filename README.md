@@ -1,7 +1,8 @@
 # Arduino-Based-Digital-Clock-Without-RTC-
 The following project demonstrates "A Real-Time Digital Clock" built using Arduino Uno R3, a 16x2 LCD display, and push buttons—no RTC module required. The project uses Arduino’s internal timing and interrupts to display accurate time and allows manual time setting via buttons. Simple, reliable, and fully customizable. I hope this will be helpful..
 
-![WhatsApp Image 2025-11-02 at 20 44 04_3fb32a3b](https://github.com/user-attachments/assets/28c7da65-562b-4490-a9b8-8a7c1d40ed2e)
+![WhatsApp Image 2025-11-02 at 20 53 50_1d695cb6](https://github.com/user-attachments/assets/68578f93-e7bd-4755-af60-ff37cd234fbd)
+
 
 
 # Project Overview
@@ -48,7 +49,8 @@ Timing Control and Display
 
 LCD Display Functionality
 - A 16x2 LCD module is initialized to display real-time hours, minutes, and seconds. The time is refreshed every second. When switched to edit mode, the display shows the temporary editable time values, allowing the user to modify them before saving.
-![WhatsApp Image 2025-11-02 at 20 44 05_35869baa](https://github.com/user-attachments/assets/f91ac8d0-c8ab-48cc-ad2f-76ba8965a2ca)
+![WhatsApp Image 2025-11-02 at 20 53 49_dcf705bd](https://github.com/user-attachments/assets/f28c283d-ff7d-4cc1-ad36-ff13aa6ab65e)
+
 
 
 Modes of Operation
@@ -86,3 +88,5 @@ I wanted to print the temperature value on the lcd screen along with the time. F
 # Video Presentation
 - ![YouTube](www.youtube.com)
 
+# Conclusion
+This project successfully demonstrates how a real-time digital clock can be implemented using only the Arduino Uno R3 without an external RTC module. By using the internal timer through the millis() function, the system efficiently tracks time while allowing user interaction for manual adjustments. The use of a 16x2 LCD provides a clear display of hours, minutes, and seconds, and the push-button interface ensures simple and reliable control. The design achieves accurate timekeeping, easy configuration, and cost-effective operation, making it ideal for learning embedded programming, timer management, and display interfacing concepts.
