@@ -81,12 +81,15 @@ Buzzer Acknowledgment
 
 
 # Additional Feature
-I wanted to print the temperature value on the lcd screen along with the time. For this feature, I have connected LM35 temperature sensor with the A4 pin of arduino uno and 5v and GND pins with the respective pins pf arduino uno. Since it is an analog sensor that is why analog pin is used.
+I wanted to print the temperature value on the lcd screen along with the time. For this feature, I have connected LM35 temperature sensor with the A4 pin of arduino uno and 5v and GND pins with the respective pins pf arduino uno. Since it is an analog sensor that is why analog pin is used. This sensor enables an extra feature at a very low cost.
 ![image](https://github.com/user-attachments/assets/5afd4cec-a70e-4fb8-902e-6b4dafebebaf)
 
 
 # Video Presentation
 - ![YouTube](www.youtube.com)
+
+# Note
+The red led's I have used in this project are optiuonal. My intention was just to give  it a more cool and nice look. Consumes some extra power and the led pattern changes along with the modes. (Refered to the video for clear understanding).
 
 # Summary
 - Project Abstract: Arduino-Based-Digital-Clock-Without-RTC-
