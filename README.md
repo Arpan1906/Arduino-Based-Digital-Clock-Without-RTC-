@@ -39,40 +39,38 @@ The project or the clock is suitable for -
 
 # Working Principle
 
-# Timing Control and Display
-The Arduino’s internal millis() function is used to measure elapsed time in milliseconds. When 1000 milliseconds have passed, the code increments the seconds counter. Upon reaching 60 seconds, the minutes counter is increased, and similarly, when minutes reach 60, the hour counter advances. This ensures continuous and accurate time progression.
-
-/*
-* Start Scheduling 
-*/
-StartMillis=millis(); 
-
-# LCD Display Functionality
-A 16x2 LCD module is initialized to display real-time hours, minutes, and seconds. The time is refreshed every second. When switched to edit mode, the display shows the temporary editable time values, allowing the user to modify them before saving.
-
-# Modes of Operation
-
-Normal Mode: The clock runs automatically, updating and displaying real-time values.
-
-Edit Mode: Triggered by pressing the mode button. In this state, the user can manually set hours, minutes, and seconds using the navigation and edit buttons.
-
-# Push Button Interface
-Four push buttons are connected to the Arduino:
-
-Mode Button: Switches between normal and edit modes.
-
-Position Button: Moves the cursor among hour, minute, and second fields.
-
-Edit Button: Increases the selected time value.
-
-OK Button: Confirms new time settings and returns to normal mode.
-
-# Non-Blocking Delay Logic
-Instead of using traditional delay functions, the program uses non-blocking timing with millis() to keep all operations (time update and button reading) running simultaneously, ensuring smooth real-time performance.
-
-# Buzzer Acknowledgment
-Every valid button press triggers a short tone on the buzzer connected to pin 8, providing auditory feedback for user actions.
+Timing Control and Display
+- The Arduino’s internal millis() function is used to measure elapsed time in milliseconds. When 1000 milliseconds have passed, the code increments the seconds counter. Upon reaching 60 seconds, the minutes counter is increased, and similarly, when minutes reach 60, the hour counter advances. This ensures continuous and accurate time progression.
 
 
+LCD Display Functionality
+- A 16x2 LCD module is initialized to display real-time hours, minutes, and seconds. The time is refreshed every second. When switched to edit mode, the display shows the temporary editable time values, allowing the user to modify them before saving.
+
+Modes of Operation
+
+- Normal Mode: The clock runs automatically, updating and displaying real-time values.
+
+- Edit Mode: Triggered by pressing the mode button. In this state, the user can manually set hours, minutes, and seconds using the navigation and edit buttons.
+
+Push Button Interface
+- Four push buttons are connected to the Arduino:
+
+- Mode Button: Switches between normal and edit modes.
+
+- Position Button: Moves the cursor among hour, minute, and second fields.
+
+- Edit Button: Increases the selected time value.
+
+- OK Button: Confirms new time settings and returns to normal mode.
+
+Non-Blocking Delay Logic
+- Instead of using traditional delay functions, the program uses non-blocking timing with millis() to keep all operations (time update and button reading) running simultaneously, ensuring smooth real-time performance.
+
+Buzzer Acknowledgment
+- Every valid button press triggers a short tone on the buzzer connected to pin 8, providing auditory feedback for user actions.
+
+# Additional Feature
+I wanted to print the temperature value on the lcd screen along with the time. For this feature, I have connected LM35 temperature sensor with the A4 pin of arduino uno and 5v and GND pins with the respective pins pf arduino uno. 
+![image](https://github.com/user-attachments/assets/5afd4cec-a70e-4fb8-902e-6b4dafebebaf)
 
 
