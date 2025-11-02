@@ -88,5 +88,18 @@ I wanted to print the temperature value on the lcd screen along with the time. F
 # Video Presentation
 - ![YouTube](www.youtube.com)
 
-# Conclusion
-This project successfully demonstrates how a real-time digital clock can be implemented using only the Arduino Uno R3 without an external RTC module. By using the internal timer through the millis() function, the system efficiently tracks time while allowing user interaction for manual adjustments. The use of a 16x2 LCD provides a clear display of hours, minutes, and seconds, and the push-button interface ensures simple and reliable control. The design achieves accurate timekeeping, easy configuration, and cost-effective operation, making it ideal for learning embedded programming, timer management, and display interfacing concepts.
+# Summary
+- Project Abstract: Arduino-Based-Digital-Clock-Without-RTC-
+
+- RTC or a Real time clock provides precise time and date.
+
+- My goal was to give you  a practical understanding of various phases that an embedded project goes through.
+
+- Development Phases: Requirement Analysis, Design, Implementation (Wiring & Coding) and Testing phase.
+
+The finalized requirements:
+
+- Real Time Clock using Arduino Uno with no time preservation 
+- Display the Time in H:M:S format on a 16x2 LCD.
+- Provision for Editing Time using Push buttons.
+- Each Key press should be acknowledged using buzzer sound
