@@ -1,6 +1,9 @@
 # Arduino-Based-Digital-Clock-Without-RTC-
 The following project demonstrates "A Real-Time Digital Clock" built using Arduino Uno R3, a 16x2 LCD display, and push buttons—no RTC module required. The project uses Arduino’s internal timing and interrupts to display accurate time and allows manual time setting via buttons. Simple, reliable, and fully customizable. I hope this will be helpful..
 
+![WhatsApp Image 2025-11-02 at 20 44 04_3fb32a3b](https://github.com/user-attachments/assets/28c7da65-562b-4490-a9b8-8a7c1d40ed2e)
+
+
 # Project Overview
 This project shows how to build a functional, low-cost digital clock using basic electronic components and Arduino’s core capabilities. It uses a 16x2 LCD display to show hours, minutes, and seconds while relying on Arduino’s internal timer functions to maintain time accuracy. Push buttons allow users to set and adjust the time manually. A small onboard buzzer is connected to acknowledge every action along with led indicators.
 
@@ -45,6 +48,8 @@ Timing Control and Display
 
 LCD Display Functionality
 - A 16x2 LCD module is initialized to display real-time hours, minutes, and seconds. The time is refreshed every second. When switched to edit mode, the display shows the temporary editable time values, allowing the user to modify them before saving.
+![WhatsApp Image 2025-11-02 at 20 44 05_35869baa](https://github.com/user-attachments/assets/f91ac8d0-c8ab-48cc-ad2f-76ba8965a2ca)
+
 
 Modes of Operation
 
@@ -55,22 +60,29 @@ Modes of Operation
 Push Button Interface
 - Four push buttons are connected to the Arduino:
 
-- Mode Button: Switches between normal and edit modes.
+- Mode Button: Switches between normal and edit modes.(M)
 
-- Position Button: Moves the cursor among hour, minute, and second fields.
+- Position Button: Moves the cursor among hour, minute, and second fields.(P)
 
-- Edit Button: Increases the selected time value.
+- Edit Button: Increases the selected time value.(E)
 
-- OK Button: Confirms new time settings and returns to normal mode.
+- OK Button: Confirms new time settings and returns to normal mode.(O)
+
+![WhatsApp Image 2025-11-02 at 20 44 06_bcf93752](https://github.com/user-attachments/assets/84c122ba-9364-4fa0-b1b2-6ac7c0c87bf6)
 
 Non-Blocking Delay Logic
 - Instead of using traditional delay functions, the program uses non-blocking timing with millis() to keep all operations (time update and button reading) running simultaneously, ensuring smooth real-time performance.
 
 Buzzer Acknowledgment
 - Every valid button press triggers a short tone on the buzzer connected to pin 8, providing auditory feedback for user actions.
+![WhatsApp Image 2025-11-02 at 20 44 05_cc80335e](https://github.com/user-attachments/assets/efbf97c5-4f9d-4683-a870-754f8254b01e)
+
 
 # Additional Feature
-I wanted to print the temperature value on the lcd screen along with the time. For this feature, I have connected LM35 temperature sensor with the A4 pin of arduino uno and 5v and GND pins with the respective pins pf arduino uno. 
+I wanted to print the temperature value on the lcd screen along with the time. For this feature, I have connected LM35 temperature sensor with the A4 pin of arduino uno and 5v and GND pins with the respective pins pf arduino uno. Since it is an analog sensor that is why analog pin is used.
 ![image](https://github.com/user-attachments/assets/5afd4cec-a70e-4fb8-902e-6b4dafebebaf)
 
+
+# Video Presentation
+- ![YouTube](www.youtube.com)
 
